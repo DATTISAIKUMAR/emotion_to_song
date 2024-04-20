@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>welcome</title>
+        <link rel="stylesheet" href="\static\style.css">
+    </head>
+    <body>
+        <div>
+            <h1>Register</h1>
+
+            <p style="color:blue;">{{msg}}</p>
+
+        <form method="POST" action="/register">
+
+
+            <input type="email" name="email" placeholder="enter the email" id="email1"><br><br>
+            <input type="password" name="psw" placeholder="enter the password" required><br><br>
+            <input type="password" name="psw1" placeholder="conform password" required ><br><br>
+
+            <input type="submit" value="Register"><br><br>
+            <a href="{{ url_for('login_page') }}">login</a>
+
+        </form>
+
+    </div>
+
+    </body>
+</html>

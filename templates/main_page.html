@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>main_page</title>
+    <link rel="stylesheet" href="\static\main_page.css" />
+  </head>
+  <body>
+    <div class="head">
+      <h1>
+        Emotion symphony: Deep learning journey through human facial emotions
+      </h1>
+    </div>
+
+    <div class="input-container">
+        <img src="{{ url_for('videos') }}" >
+
+      <div class="input-section camera-btn-container">
+        <a href="{{ url_for('play_song') }}"><button class="btn camera-btn" id="camera-btn">play song</button></a>
+      </div>
+      <div class="input-section camera-btn-container">
+        <a href="{{ url_for('main_pg') }}"><button class="btn camera-btn" id="camera-btn">Upload</button></a>
+      </div>
+
+    </div>
+  </body>
+</html>

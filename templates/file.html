@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>main_page</title>
+    <link rel="stylesheet" href="\static\ file.css" />
+  </head>
+  <body>
+    <div class="head">
+      <h1>
+        Emotion symphony: Deep learning journey through human facial emotions
+      </h1>
+    </div>
+
+    <center><h3>{{ msg }}</h3></center>
+    <div class="input-section">
+        <form class="file_data" method="POST" action="/file" enctype="multipart/form-data">
+          <input type="file" name="file" required />
+          <button class="btn submit-btn" id="submit-btn">Submit</button>
+        </form>
+        {% if file_url %}
+                <img src="{{ file_url }}" style="height:300px;width:300px;">
+        {% endif %}
+        <h6>prediction is : {{ prediction }}</h6>
+        <a href="{{ url_for('play_song') }}"><button>play song</button></a>
+        <a href="{{ url_for('file_page') }}"><button>Camera</button></a>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,60 @@
+/* Styles for the header */
+.head {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #333;
+  padding: 20px;
+}
+
+/* Styles for the title */
+.head h1 {
+  font-size: 24px;
+  color: white;
+}
+
+/* Styles for the form section */
+.input-section {
+  text-align: center;
+}
+
+
+.file_data {
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+}
+
+/* Styles for the submit button */
+.submit-btn {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Styles for the image */
+.input-section img {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Styles for the prediction text */
+.input-section h6 {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Styles for the play song button */
+.input-section button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="\static\style.css">
+    </head>
+    <body>
+        <div>
+            <h1>LOGIN</h1>
+            <p style="color:blue;">{{msg}}</p>
+
+        <form method="POST" action="/login">
+
+            <input type="email" name="email1" placeholder="enter the email" autofocus required id="ema"><br><br><br>
+            <input type="password" name="psw1" placeholder="enter the password" id="pass" required><br><br><br>
+            <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AXo7B7U1AM2Cu1W5nt8jSbjLJLanlQ836F0ouY9v1NaUSYjfVoDkpMIZ_9OoxxoAgNTZMPueHw6I2g&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1342309434%3A1692374342774662" id="hi">forget password</a><br><br><br>
+            <input type="submit" value="Login" id="button"><br><br><hr>
+            <h6>or</h6><hr><br><br>
+
+        </form>
+        <a href="{{ url_for('register') }}"><button>Register</button></a>
+    </div>
+    </body>
+</html>

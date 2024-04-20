@@ -1,0 +1,66 @@
+
+body{
+    display: grid;
+    margin: 0;
+    padding:0 24px;
+    place-items: center;
+    background-image: url("pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation:pan 6s infinite alternate linear;
+}
+@keyframes pan{
+    100%{background-position: 15% 50%;}
+}
+div{
+    margin: 10px;
+    width:300px;
+    padding: 10px 30px 40px;
+    border-color: aliceblue;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 60px 0 black,
+    0 0 20px 0 white;
+   place-items: center;
+   background-color: antiquewhite;
+}
+h1,#hi{
+    margin-left: 90px;
+}
+h6{
+    margin-left: 140px;
+}
+input{
+    width: 300px;
+    height: 25px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px whitesmoke,
+    0 0 10px wheat;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+button,#button{
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    background-color: wheat;
+    box-shadow: 0 0 10px whitesmoke,
+    0 0 10px wheat;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+button:hover{
+    background-color: blue;
+}
+@media screen and (max-width >=500){
+    body{
+        padding: 0%;
+    }
+}
